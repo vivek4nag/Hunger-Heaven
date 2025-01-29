@@ -5,6 +5,7 @@ import Layout from "./components/Layout"
 import ReviewPage from "./pages/ReviewPage"
 import CartPage from "./pages/CartPage"
 import LoginPage from "./pages/LoginPage"
+import MenuPage from "./pages/MenuPage"
 
 
 function App() {
@@ -24,6 +25,10 @@ function App() {
         {
           path: "/cart",
           element: <CartPage/>
+        },
+        {
+          path:`/:id/menu`,
+          element:<MenuPage/>
         }
       ]
     },
