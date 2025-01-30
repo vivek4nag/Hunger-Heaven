@@ -17,7 +17,7 @@ const MenuCard = ({
           <img
             src={`${IMG_URL}/${imageId}`}
             alt={name}
-            className="rounded-md object-cover h-40 w-full"
+            className="rounded-md object-cover h-60 w-full"
           />
     
           

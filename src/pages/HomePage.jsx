@@ -20,7 +20,7 @@ const HomePage = () => {
   return (
     <div className="min-h-[60rem] mt-24">
       <div>
-        <h4 className="text-red-600">Yahn banner aayga</h4>
+        <h4 className="text-red-600">Banner section</h4>
       </div>
       <div className="py-20 flex flex-wrap gap-6 px-10 justify-center align-middle">
         {restaurantList && restaurantList.map((ele) =>  <RestaurantCard key={ele.id} {...ele} />)}

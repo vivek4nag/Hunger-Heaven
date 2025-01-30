@@ -4,7 +4,7 @@ import ReviewCard from "../components/ReviewCard"
 const ReviewPage = () => {
   const [borderColor , setBorderColor] = useState(false);
   return (
-    <div className="pt-[130px]">
+    <div className="pt-[130px] text-amber-100">
             <div className="sm:w-[500px]  w-[95%] m-auto flex flex-col gap-8">
                 <h1 className="text-5xl font-bold text-center">Reviews</h1>
                 <div className="flex sm:flex-row flex-col gap-3 items-center ">

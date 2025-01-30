@@ -1,8 +1,7 @@
-import { IoMdHome } from "react-icons/io";
-import { FaBars, FaShoppingCart } from "react-icons/fa";
-import { MdReviews } from "react-icons/md";
-import { FaUserCircle } from "react-icons/fa";
+import { FaBars, FaShoppingCart, FaUserCircle } from "react-icons/fa";
+import { MdReviews, MdFoodBank  } from "react-icons/md";
 import logo from "../assets/logo.png";
+
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
@@ -15,9 +14,10 @@ const HeaderComp = () => {
   return (
     <>
       <div className="w-full fixed top-0 left-0 z-30 flex justify-between items-center bg-slate-950 ">
-        {/* ye logo hai */}
+
+        {/* yahn logo aayga */}
         <div>
-          <img src={logo} className="h-16 md:h-22 pl-2 md:pl-10" alt="" />
+          <img src={logo} className="h-16 md:h-22 pl-2 md:pl-10 cursor-pointer hover:scale-105 transition-all duration-300" alt="" onClick={() => navigate("/")} />
         </div>
 
         {/* ye beech wale button */}
@@ -29,7 +29,7 @@ const HeaderComp = () => {
 
         {/*  ye small screen wale button */}
         <div className="flex sm:hidden justify-center b items-center sm:gap-10 text-gray-200 gap-8 text-xl">
-          <IoMdHome
+          <MdFoodBank 
             className="hover:text-orange-600 cursor-pointer"
             style={{ fontSize: "30px" }}
             onClick={() => navigate("/")}
